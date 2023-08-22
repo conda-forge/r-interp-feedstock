@@ -3,6 +3,7 @@ About r-interp-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-interp-feedstock/blob/main/LICENSE.txt)
 
+
 About r-interp
 --------------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=interp
 Package license: GPL-2.0-or-later
 
 Summary: Bivariate data interpolation on regular and irregular grids, either linear or using splines are the main part of this package.  It is intended to provide FOSS replacement functions for the ACM licensed akima::interp and tripack::tri.mesh functions. Currently the piecewise linear interpolation part of akima::interp (and also akima::interpp) is implemented in interp::interp, this corresponds to the call akima::interp(..., linear=TRUE) which is the default setting and covers most of akima::interp use cases in depending packages.  A re-implementation of Akimas spline interpolation (akima::interp(..., linear=FALSE)) is currently under development and will complete this package in a later version. Estimators for partial derivatives are already available, these are a prerequisite for the spline interpolation.  The basic part is currently a GPLed triangulation algorithm (sweep hull algorithm by David Sinclair) providing the starting point for the piecewise linear interpolator. As side effect this algorithm is also used to provide replacements for the basic functions of the tripack package which also suffer from the ACM restrictions.  All functions are designed to be backward compatible with their akima / tripack counterparts.
+
 About r-interp
 --------------
 
@@ -98,6 +100,20 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9996&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-interp-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.3" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_r_base4.2</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9996&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-interp-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9996&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-interp-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
