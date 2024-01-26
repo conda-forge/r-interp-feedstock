@@ -1,4 +1,4 @@
-{% set version = "1.1-5" %}
+{% set version = "1.1-6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/interp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/interp/interp_{{ version }}.tar.gz
-  sha256: 0c520971a10156162e4430873066e73b798be2f45aa0f222d64c987aba0e4b20
+  sha256: 3674044e5334ecdf124054303929c084fc0797d3123e28576a230492ea6ecd34
 
 build:
   merge_build_host: true  # [win]
